@@ -13,7 +13,7 @@ const cors = require("cors")
 //   type Mutation { pushNotification(label: String!): Notification }
 // `
 const typeDefs =gql(importSchema("./schema.graphql"))
-const resolvers = require("./resolver")
+const resolvers = require("./resolver/resolver")
 const schema = makeExecutableSchema({ typeDefs, resolvers })
 
 const server  = new ApolloServer({schema})
