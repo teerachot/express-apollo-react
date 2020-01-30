@@ -5,6 +5,7 @@ type Notification {
 	label: String,
     from: String
 }
+
 type Mutation {
 	pushNotification(label: String!,id: String): Notification
 }
